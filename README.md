@@ -1,4 +1,4 @@
-# Django Routing
+# Django Authentication
 
 This repository contains a Django project with a basic setup for routing. It demonstrates how to define routes and corresponding views in Django.
 
@@ -58,7 +58,8 @@ This Django project demonstrates how to define routes using the `urls.py` file. 
 urlpatterns = [
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
+    path('/signin', views.signin, name='signin'),
+    path('/signun', views.signup, name='signup')
 ]
 ```
 
